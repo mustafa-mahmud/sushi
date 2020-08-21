@@ -1,0 +1,31 @@
+.tasty {
+	grid-row: row-start 2/row-end 2;
+	grid-column: full-start/full-end;
+
+	display: grid;
+	grid-template-columns: 7rem [center-start] 1fr [center-end] 7rem;
+
+	padding: 10rem 0;
+	padding-bottom: 15rem;
+	background-image: url(../img/tasty/2.jpg);
+	background-color: $c-default;
+	background-size: cover;
+	background-position: center -15rem;
+	background-repeat: no-repeat;
+
+	&__container {
+		grid-column: center-start/center-end;
+
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 45rem));
+		justify-content: center;
+		align-items: center;
+		gap: 5rem;
+
+		img {
+			width: 35rem;
+			height: 35rem;
+			border-radius: 50%;
+		}
+	}
+}
